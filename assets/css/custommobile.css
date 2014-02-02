@@ -1,0 +1,40 @@
+
+@media only screen and (max-device-width: 480px){
+#header_wrapper{
+background-image:url('../images/grayheader.jpg');
+height:100px;
+}
+
+body{
+background-image:url('../images/background.jpg');
+}
+
+/* Main Menu */
+
+#header_container{
+	width:480px;
+	margin: 0 auto;
+	padding-top:22px;
+}
+
+#main_menu > li{
+	float:left;
+	list-style-type:none;
+}
+
+
+
+.menu_item{
+	display:inline;
+	padding: 2.7% 40px;
+	color:white;
+	text-decoration:none;
+	font-size:250%;
+}
+
+.menu_item:hover{
+	background:red;
+	cursor:pointer;
+}
+}
+

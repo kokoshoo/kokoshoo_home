@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^localhost/pages$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^localhost/pages$
+RewriteCond %{REQUEST_URI} !kokoshoo/
+RewriteRule (.*) /stream/$1 [L]

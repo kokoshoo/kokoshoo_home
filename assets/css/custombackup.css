@@ -1,0 +1,269 @@
+@import "bootstrap.css";
+/* Header */
+header{  background-color:/*#D3A440;*/rgb(30, 119, 98);    /*background-color:rgb(30, 119, 98);*/}body{  background-color:#FBFBFB;    min-width:1050px;	padding: 0;	}.nav{  background-color:#179B3C;/*rgb(30, 119, 98);*/  min-width:1220px;  }.nav-pills > li{  border-right:solid;  border-color:/*#D3A440;*/rgb(30, 119, 98);  margin-left:.25%;}.nav-pills .dropdown-menu{  -webkit-border-radius: 0px;  -moz-border-radius: 0px;  border-radius:0px;  margin-top:.03em;  background-color:rgb(208, 224, 236);}
+.dropdown-menu > li > a{  color:#3D463B;  font-weight: bold;}.dropdown-menu > li > a:hover {      background:#179B3C;}
+#banner {
+  display: block;
+  margin: 5px auto;
+  width:600px;
+}
+
+.container{  width:1200px;  min-width:1200px;
+}
+
+#home_link{
+  font-size:2em;
+  color:green;
+
+}
+
+#home_link >  a{
+  color:greenyellow;
+}
+
+.main_menu{
+  margin: 0 auto;  width: 1220px;
+  font-size:12px;
+}
+
+.caret{
+  border-top: 3px solid white;
+}
+
+
+.dropdown-menu >   a {
+    font-weight: bold;
+    color:#F00F70;
+  }
+
+#interpret-drop{
+  width:13em;
+}
+
+.nav >li > a{
+  padding: 8px .85em;
+  margin: 2px 0;
+}
+
+li#home_link > a{
+
+}
+
+
+a{
+  color:white;
+	font-weight: bold;
+  font-size:120%;
+}
+
+a.menu:after, .dropdown-toggle:after {
+    content: none;
+}
+
+.dropdown-menu{
+  padding-top:0px;
+  padding-bottom: 0px;
+}
+
+
+
+/* Left Panel */
+
+.left_panel{
+  float:left;
+  width:11em;
+  margin-top:6em;
+  margin-left:1em;    border:solid;
+}.left_panel_bank_info{  margin-top:1em;  text-align:center;  }
+
+
+/* Home */
+
+.page_content{  min-width: 950px;
+  margin: 3.5em 14em;  padding:2em 2em;  background:white;
+}
+.end_of_page_content{  clear:both;}
+#myCarousel{
+	width: 600px;
+	float: right;
+}
+
+.home_content{
+	float: left;
+}
+
+
+/* Process */
+
+.process{
+  margin-top: 2em;
+}
+
+.process_left{
+ float:left;
+ margin-bottom:100px;
+ height:6.5em;
+ width: 200px;
+ background-color:gainsboro;
+ text-align:center;
+
+
+
+}
+
+.process_right{
+  float:left;
+  padding-left: 3em;
+
+}.long_section{  height:6em;}
+#side_note{  font-size:75%;  font-weight:normal;  }
+.process_sign{
+  padding-top:0.5em;
+}
+.process_table{  padding-left: 3em;}
+.process_info{
+
+  width:21em;
+  list-style-type:decimal;
+  font-size:150%;
+  font-weight:bold;
+  color:inherit;  
+
+}
+
+.process_info > li{
+      margin-bottom:3em;
+    }
+  
+  .interpret_info_bullet{
+    list-style-type:square;
+  }
+
+
+/* Price */
+table{
+  
+  border-color:grey;
+}
+th{
+  width:10em;
+  height:3em;
+  background-color:grey;
+
+}
+
+td{
+  height:5em;
+  text-align:center;
+  border-color:grey;
+}
+
+.transkorean{
+  border:none;
+  font-size:150%;
+}
+
+.pricetable{
+  float:left;
+  margin-left:20px;
+}
+
+.interprettable{
+  margin:2em auto;
+}
+
+.interpretleft{
+  border:none;
+  font-size:150%;
+  vertical-align:bottom;
+}
+
+.interpretright{
+  vertical-align:bottom;
+  border:none;
+}
+
+
+/* Footer */
+
+footer {
+  margin: 5em auto;
+  padding-top: 15px;
+  border-top: 1px solid #eaeaea;
+  width:90%;
+  min-width: 90%;
+  color: #999;
+  text-align:center;
+
+}
+
+small{
+    font-size:110%;
+    padding-bottom:5px;
+    color: #9F9D9D;
+  }
+
+.phone{
+	float: right;
+}
+
+/* Company */
+
+
+
+.company_top{
+  margin: 5px auto;
+  width: 30em;
+}
+#company_description{  font-size: 140%;}.company_bottom{ text-align:center;}
+
+#david{
+  width:50%;
+}
+.company_header{
+  text-align: center;
+}
+
+
+/* QandA */#qanda_title{  text-align:center;  font-weight:bold;}#qanda_content{  width:700px;  padding:2em 2em;  margin:0 auto;  border:solid;  font-size:140%;}.qanda_question{  margin: 2em 0em;}
+/* Email form */
+
+.form{
+  width:35em;
+  margin: 0 auto;
+}
+.form_left{
+  width:8em;
+  float:left;
+}
+.form_right{
+  
+}
+
+.form ul{
+  list-style-type:none;
+}
+
+.form div{
+  margin-bottom:1em;
+}
+
+#education{
+  height:5em;
+}
+
+#experience{
+  height:5em;
+}
+
+#additional{
+  height:5em;
+}
+
+#idNum1{
+  width:4em;
+}
+
+#idNum2{
+  width:4em;
+}
