@@ -1,40 +1,289 @@
-
-@media only screen and (max-device-width: 480px){
-#header_wrapper{
-background-image:url('../images/grayheader.jpg');
-height:100px;
-}
-
 body{
-background-image:url('../images/background.jpg');
+	background-image:url('../images/background.jpg');
+	min-width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
 }
+	
+	
+	#main_wrapper{
+	min-height:100%;
+	position: relative;
+	}
+	
+	/*#header_wrapper{
+	background-image:url('../images/grayheader.jpg');
+	height:70px;
+	}*/
+	
+	#header_wrapper{
+	width:100%;
+	height: 180px;
+	margin:0;
+	background-image:url('../images/grayheader.jpg');
+	}
 
-/* Main Menu */
 
-#header_container{
-	width:480px;
+	
+	html{
+	height:100%;
+	margin:0;
+	padding:0;
+	}
+
+
+	/*~~Menu styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+	#header_container{
+		width:100%;
+		margin: 0 auto;
+		padding:0;
+		/*padding-top:22px;*/
+	}
+	
+		
+
+	/*#main_menu > li{
+		display:inline;
+		list-style-type:none;
+	}
+	*/
+		
+	#main_menu{
+		margin:0;
+	}
+	
+	#main_menu > li{
+		display:block;
+		list-style-type:none;
+	}
+
+
+
+	/*.menu_item{
+		display:inline;
+		position:relative;
+		padding: 2.7% 40px;
+		color:white;
+		text-decoration:none;
+		font-size:150%;
+	}
+
+	.menu_item:hover{
+		background:black;
+		cursor:pointer;
+		text-decoration:none;
+		color:white;
+	}
+	
+	.menu_item:active{
+		background:orange;
+	}
+	*/
+	
+	
+	
+	.menu_item{
+		display:block;
+		height:25px;
+		position:relative;
+		padding: 10px 40px;
+		color:white;
+		text-decoration:none;
+		font-size:120%;
+		text-align:center;
+	}
+	
+	.menu_item:hover{
+		background:black;
+		cursor:pointer;
+		text-decoration:none;
+		color:white;
+	}
+	
+	.menu_item:active{
+		background:red;
+	}
+
+	
+	
+	.submenu{
+		
+		display:none;
+		position:absolute;
+
+	}
+	
+	
+	.menu_item:hover .submenu{
+		display:block;
+		margin:0;
+		padding:0;
+		list-style-type:none;
+		background:white;
+		margin-top:1.3em;
+		margin-right:5em;
+	}
+	
+
+	
+	.submenu_item{
+		border-style:none;
+		padding:0;
+		width:12em;
+		height:100%;
+		background:gray;
+		
+		
+	}
+	
+	.submenu_item > a{
+		
+		display:block;
+		padding:.75em;
+		color:black;
+		text-decoration:none;
+		
+	}
+	
+	.submenu_item > a:hover{
+		
+		color:white;
+	}
+	
+	.submenu_item:hover{
+		
+		background:black;
+		cursor:pointer;
+		text-decoration:none;
+		
+	}
+	
+	
+	/*-------End of Menu Styles------------------------------------------*/
+	
+/* Page style~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+	
+/*#page_content_wrapper{
+	width: 1000px;
 	margin: 0 auto;
-	padding-top:22px;
+	
+}*/
+
+#page_content_wrapper{
+	width: 100%;
 }
 
-#main_menu > li{
+#page_content{
+	display:block;
+	margin-top:30px;
+	width: 98%;
+	margin: 20px auto;
+	font-size: 150%;
+}
+
+#img1{
+	margin-right:15px;
+}
+
+#img2{
+	margin-left:15px;
+
+}
+
+/*#left_section{
 	float:left;
-	list-style-type:none;
+	background:white;
+	width:77%;
+	margin-left:20px;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+}
+
+#left_content{
+	padding:20px 40px;
+
+}*/
+
+#left_section{
+	background:white;
+	width:100%;
+	margin: 0 auto;
+}
+
+#left_content{
+	padding:10px;
 }
 
 
 
-.menu_item{
-	display:inline;
-	padding: 2.7% 40px;
-	color:white;
-	text-decoration:none;
-	font-size:250%;
+/*#right_section{
+	float:left;
+	background:white;
+	margin-left:3%;
+	width:16%;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+}*/
+
+#right_section{
+	width:100%;
+	margin:20px 0 50px 0;
+	background:white;
 }
 
-.menu_item:hover{
-	background:red;
-	cursor:pointer;
-}
+
+#menu_one{
+	padding: 2% 4%;
 }
 
+#clear_page_content{
+	clear:both;
+}
+
+#page_content{
+	margin-top:50px;
+}
+
+/*~~~~~~~End of page styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Home ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#home_content{
+	padding:2em;
+}
+
+/*End of Home ~~~~~~~~~~~~~~*/
+
+
+
+/*End Page Content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*#footer{
+	position: absolute;
+	color:gray;
+	bottom:0;
+	background-image:url('../images/blackheader.jpg');
+	width:100%;
+	padding-top:10px;
+	background-attachment:scroll;
+	
+}
+*/
+
+#footer{
+	color:gray;
+	background-image:url('../images/blackheader.jpg');
+	width:100%;
+	padding-top:10px;
+	background-attachment:scroll;
+	
+}
+
+#footer > *{
+	text-align:center;
+}
+/*End of end page content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

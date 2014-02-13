@@ -12,13 +12,10 @@ public function view($page = 'home')
 		show_404();
 	}
 
-	$data['title'] = ucfirst($page); // Capitalize the first letter
+	$data['page'] = $page; // Capitalize the first letter
 	
-	$this->load->view('templates/_header', $data);
-	$this->load->view('templates/_pagecontentstart',$data);
-	$this->load->view('pages/'.$page, $data);
-	$this->load->view('templates/_pagecontentfinish',$data);
-	$this->load->view('templates/_footer', $data);
+
+	$this->load->view('templates/_page',$data);
 
 }
 }

@@ -1,7 +1,14 @@
+	body{
+	background-image:url('../images/background.jpg');
+	height:100%;
+	margin:0;
+	padding:0;
+	min-width:1000px;
+	}
+	
 	#main_wrapper{
 	min-height:100%;
 	position: relative;
-	min-width:1000px;
 	}
 	
 	#header_wrapper{
@@ -9,12 +16,7 @@
 	height:70px;
 	}
 
-	body{
-	background-image:url('../images/background.jpg');
-	height:100%;
-	margin:0;
-	padding:0;
-	}
+
 	
 	html{
 	height:100%;
@@ -23,7 +25,7 @@
 	}
 
 
-	/* Main Menu~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+	/*~~Menu styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 	#header_container{
 		width:1000px;
@@ -40,6 +42,7 @@
 
 	.menu_item{
 		display:inline;
+		position:relative;
 		padding: 2.7% 40px;
 		color:white;
 		text-decoration:none;
@@ -49,8 +52,71 @@
 	.menu_item:hover{
 		background:black;
 		cursor:pointer;
+		text-decoration:none;
+		color:white;
 	}
-	/*-----------------------------------------------------------------*/
+	
+	.menu_item:active{
+		background:blue;
+	}
+	
+	
+	.submenu{
+		
+		display:none;
+		position:absolute;
+
+	}
+	
+	
+	.menu_item:hover .submenu{
+		display:block;
+		margin:0;
+		padding:0;
+		list-style-type:none;
+		background:white;
+		margin-top:1.3em;
+		margin-right:5em;
+	}
+	
+
+	
+	.submenu_item{
+		border-style:none;
+		padding:0;
+		width:12em;
+		height:100%;
+		background:gray;
+		
+		
+	}
+	
+	.submenu_item > a{
+		
+		display:block;
+		padding:.75em;
+		color:black;
+		text-decoration:none;
+		
+	}
+	
+	.submenu_item > a:hover{
+		
+		color:white;
+	}
+	
+	.submenu_item:hover{
+		
+		background:black;
+		cursor:pointer;
+		text-decoration:none;
+		
+	}
+	
+	
+	/*-------End of Menu Styles------------------------------------------*/
+	
+/* Page style~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	
 #page_content_wrapper{
 	width: 1000px;
@@ -71,28 +137,54 @@
 	float:left;
 	background:white;
 	width:77%;
-	padding:15px 15px;
+	margin-left:20px;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
 }
+
+#left_content{
+	padding:20px 40px;
+
+}
+
 
 #right_section{
 	float:left;
-	background:rgb(220, 182, 228);
+	background:white;
 	margin-left:3%;
 	width:16%;
-	height:500px;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+}
+
+#menu_one{
+	padding: 2% 4%;
 }
 
 #clear_page_content{
 	clear:both;
-	margin-bottom:20px;
 }
 
 #page_content{
-	padding-top:80px;
-	padding-left:15px;
-	padding-bottom:80px;
+	margin-top:50px;
 }
 
+/*~~~~~~~End of page styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Home ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#home_content{
+	padding:2em;
+}
+
+/*End of Home ~~~~~~~~~~~~~~*/
+
+
+
+/*End Page Content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #footer{
 	position: absolute;
 	color:gray;
@@ -106,4 +198,104 @@
 
 #footer > *{
 	text-align:center;
+}
+/*End of end page content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media only screen and (min-width: 150px) and (max-width: 600px){
+
+	body{
+	background-image:url('../images/background.jpg');
+	min-width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	}
+	
+	#header_container{
+		width:100%;
+		padding:0;
+	
+		
+	}
+	
+	#header_wrapper{
+	width:100%;
+	height: 180px;
+	margin:0;
+	background-image:url('../images/grayheader.jpg');
+	}
+	
+	#main_menu{
+		margin:0;
+		
+	}
+	
+	#main_menu > li{
+		display:block;
+		list-style-type:none;
+	}
+	
+	.menu_item{
+		display:block;
+		height:25px;
+		position:relative;
+		padding: 10px 40px;
+		color:white;
+		text-decoration:none;
+		font-size:120%;
+		text-align:center;
+	}
+	
+	.menu_item:hover{
+		background:black;
+		cursor:pointer;
+		text-decoration:none;
+		color:white;
+	}
+	
+	.menu_item:active{
+		background:orange;
+	}
+
+
+#page_content_wrapper{
+	width: 100%;
+
+	
+}
+
+#page_content{
+	display:block;
+	margin-top:30px;
+	width: 98%;
+	margin: 20px auto;
+	font-size: 150%;
+}
+
+#left_section{
+	background:white;
+	width:100%;
+	margin: 0 auto;
+}
+
+#left_content{
+	padding:10px;
+}
+
+#right_section{
+	width:100%;
+	margin:20px 0 50px 0;
+	background:white;
+}
+
+
+#footer{
+	color:gray;
+	background-image:url('../images/blackheader.jpg');
+	width:100%;
+	padding-top:10px;
+	background-attachment:scroll;
+	
+}
+
 }
