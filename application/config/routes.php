@@ -38,8 +38,10 @@
 |
 */
 
-$route['default_controller'] = "static_pages/view";
-$route['(:any)'] = 'static_pages/view/$1';
+$route['default_controller'] = "static_pages/index";
+$route['validate_credentials'] = "static_pages/validate_credentials";
+$route['logout'] = "static_pages/logout";
+$route['(:any)'] = 'static_pages/index/$1';
 $route['404_override'] = '';
 
 
