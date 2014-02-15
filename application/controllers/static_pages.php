@@ -8,12 +8,13 @@ public function index($page = 'home')
 
 	if ( ! file_exists('application/views/pages/'.$page.'.php'))
 	{
-		// Whoops, we don't have a page for that!
+		// Page doesn't exist
 		show_404();
 	}
 
 	$data['page'] = $page; // Capitalize the first letter
-	$data['name'] = $this->session->userdata('name');
+	$data['first_name'] = $this->session->userdata('first_name');
+	$data['id'] = $this->session->userdata('id');
 	$data['is_logged_in'] = $this->session->userdata('is_logged_in');
 
 	$this->load->view('templates/_page',$data);
@@ -27,24 +28,28 @@ public function validate_credentials(){
 		$this->load->model('membership_model');
 		$query = $this->membership_model->validate();
 		
-		if($query){
+		if($query != null){
 			$data = array(
-				'username' => $this->input->post('username'),
-				'name' => $this->input->post('first_name'),
+				'username' => $query->username,
+				'first_name' => $query->first_name,
+				'id' => $query->id,
 				'is_logged_in' => true
 			);
 			
+			
 			$this->session->set_userdata($data);
-			redirect('members_area');
+			redirect('index/members_area');
 		}
 		else{
-			redirect('login_fail');
+			redirect('index/login_fail');
 		}
 }
 
+
+
 public function logout(){
 	$this->session->sess_destroy();
-	redirect('logout_page');
+	redirect('index/logout_page');
 	//$this->index('home');
 }
 

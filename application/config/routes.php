@@ -39,9 +39,9 @@
 */
 
 $route['default_controller'] = "static_pages/index";
-$route['validate_credentials'] = "static_pages/validate_credentials";
-$route['logout'] = "static_pages/logout";
-$route['(:any)'] = 'static_pages/index/$1';
+$route['(:any)'] = 'static_pages/$1';
+$route['flashcards'] = 'flashcards_controller/index';
+$route['flashcards/(:any)'] = "flashcards_controller/$1";
 $route['404_override'] = '';
 
 

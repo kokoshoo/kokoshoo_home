@@ -8,7 +8,10 @@ class Membership_model extends CI_Model{
 		$query = $this->db->get('users');
 		//If record is found login and start session
 		if($query->num_rows == 1){
-			return true;
+			return $query->row();
+		}
+		else{
+			return null;
 		}
 		
 	}

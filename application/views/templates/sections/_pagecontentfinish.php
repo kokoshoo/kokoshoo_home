@@ -6,7 +6,7 @@
 		
 			<?php
 				if($is_logged_in){
-					echo '<p> Welcome ', $this->session->userdata('username'),"! </p>";
+					echo '<p> Welcome ', $this->session->userdata('first_name'),"! </p>";
 					echo anchor('logout', 'Logout');
 				}
 				else{
