@@ -1,0 +1,108 @@
+body{
+background-image:url('../images/flashcard_background2.png');
+height:100%;
+width:100%;
+min-width:1000px;
+margin:0;
+padding:0;
+}
+
+
+.content{
+	width:1000px;
+	margin:0 auto;
+}
+
+/* Header stuff ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{
+	width:100%;
+}
+
+header *{
+	margin:0;
+}
+
+#header_top{
+	background:#1b1640;
+}
+
+#header_top *{
+	color:white;
+}
+
+#header_bottom{
+	background:white;
+}
+
+#menu{
+	padding:10px;
+}
+
+#menu *{
+	display:inline;
+}
+
+#menu_right{
+	float:right;	
+}
+
+#menu_right a{
+	margin-left:2em;
+}
+
+#menu_bottom{
+	padding:20px;
+	color: black;
+	font-size:200%;
+	text-decoration:none;	
+
+}
+
+.menu_item{
+	cursor:pointer;
+}
+/*~~~~~~~~~~~~Header end~~~~~~~~~~~~~~~~~~*/
+
+#page_content{
+	max-width:1000px;	
+	margin: 3em auto;
+	background:rgb(248, 248, 248);
+	padding:2em;
+}
+
+
+/*login form~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#login_form{
+	background:white;
+	width:90%;
+	text-align:center;
+	margin: 0 auto;
+	padding:5em 0;
+}
+
+input[type='text'],input[type='password']{
+	margin:20px auto;
+	display:block;
+}
+input[type=submit],form a {
+	border: none;
+	font-size:100%;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0 1em 0 0;
+	padding: 6px;
+	text-decoration: none;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	background: #403FBB;
+	color: white;
+	line-height:15px;
+}
+
+input[type=submit]:hover, form a:hover{
+	background:	#100F7C;
+	text-decoration:none;
+	color:white;
+}
+/*login form end ~~~~~~~~~~~~~~~~~~~~~*/
+
+

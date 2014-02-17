@@ -1,4 +1,6 @@
 
 <?php $this->load->view('apps/flashcards/templates/sections/_header')?>
-<?php $this->load->view('apps/flashcards/pages/login_form')?>
+<div id="page_content">
+	<?php $this->load->view('apps/flashcards/pages/'.$page)?>
+</div>
 <?php $this->load->view('apps/flashcards/templates/sections/_footer')?>

@@ -9,6 +9,7 @@ public function index($page = 'home')
 	if ( ! file_exists('application/views/pages/'.$page.'.php'))
 	{
 		// Page doesn't exist
+		echo 'static';
 		show_404();
 	}
 
