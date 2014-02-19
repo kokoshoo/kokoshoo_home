@@ -1,7 +1,7 @@
 
 <div id="footer">
 
-<p><small>footer</small></p>
+<p><small></small></p>
 
 </div>
 

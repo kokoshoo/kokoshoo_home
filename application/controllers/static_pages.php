@@ -15,7 +15,7 @@ public function index($page = 'home')
 
 	$data['page'] = $page; // Capitalize the first letter
 	$data['first_name'] = $this->session->userdata('first_name');
-	$data['id'] = $this->session->userdata('id');
+	$data['user_id'] = $this->session->userdata('user_id');
 	$data['is_logged_in'] = $this->session->userdata('is_logged_in');
 
 	$this->load->view('templates/_page',$data);
@@ -24,7 +24,7 @@ public function index($page = 'home')
 
 
 
-public function validate_credentials(){
+public function login(){
 		//$this->index('members_area');
 		$this->load->model('membership_model');
 		$query = $this->membership_model->validate();
@@ -33,7 +33,7 @@ public function validate_credentials(){
 			$data = array(
 				'username' => $query->username,
 				'first_name' => $query->first_name,
-				'id' => $query->id,
+				'user_id' => $query->user_id,
 				'is_logged_in' => true
 			);
 			
